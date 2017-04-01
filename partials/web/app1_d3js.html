@@ -1,0 +1,45 @@
+<!--   
+
+Auteur:Gerstein Liam
+   
+  Petit TP pour melanger d3.js avec angular-js
+      -https://www.dashingd3js.com/table-of-contents  (tuto pour apprendre d3.js)
+	  -http://www.w3schools.com/angular/angular_events.asp (Click->fonction->resultat dans html)
+
+  But: Créer un cercle a chaque click
+  
+  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="lib/d3/d3.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+      <button ng-click="myFunction()">Click Me!</button>
+      <p>{{ count }}</p>
+    </div>
+    <script>
+      var app = angular.module('myApp', []);
+	  
+      app.controller('myCtrl', function($scope) {
+          $scope.count = 0;
+          $scope.myFunction = function() {
+              $scope.count++;
+      		var bodySelection = d3.select("body");
+      
+       var svgSelection = bodySelection.append("svg")
+      	   .attr("width", 50)
+      	   .attr("height", 50);
+       
+       var circleSelection = svgSelection.append("circle")
+      	   .attr("cx", 25)
+      	   .attr("cy", 25)
+      	  .attr("r", 25)
+      	  .style("fill", "purple");
+          }
+      });
+    </script>
+  </body>
+</html>

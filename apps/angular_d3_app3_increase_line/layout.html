@@ -1,0 +1,56 @@
+<!--   
+   Angular JS avec d3.js
+   
+   But: Créer un cercle a chaque click
+   
+   
+   
+   -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <script src="lib/d3/d3.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src="svg_controller.js"></script>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div ng-app="myApp" >
+         <div class="container">
+           
+            <div class="row">
+               <div class="col-md-2 col-sm-2 col-xs-2" id="vertical_menu_zone">
+			   
+			   
+			   
+			   <div ng-controller="SVG_Ctrl">
+			<form>
+			    <p>Signal 1</p>
+			    <input type="number" value="0" min="0" max="1" ng-model="signal_1" size="20" />
+				<p>Signal 2</p>
+				<input type="number" value="0" min="0" max="1" ng-model="signal_2" size="20" />
+				
+				<button ng-click="myFunction()">Latch</button>
+				<p>{{ count }}</p>
+				<br/>
+			</form>    
+		</div>
+			   
+			   
+			   
+			   
+			   
+				
+               </div>
+               <div class="col-md-10 col-sm-10 col-xs-10" id="workplace">
+					<div id="draw_zone" ></div>
+               </div>
+            </div>
+         </div>
+        
+      </div>
+   </body>
+</html>

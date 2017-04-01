@@ -1,0 +1,24 @@
+#pdfview{
+	
+	 height: 80vh;
+	 width: 100%;
+}
+
+#cv_view {
+  transition: all linear 1s;
+    background-color: transparent;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+
+}
+
+#cv_view.ng-hide {
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  top:-200px;
+  left: 200px;
+}

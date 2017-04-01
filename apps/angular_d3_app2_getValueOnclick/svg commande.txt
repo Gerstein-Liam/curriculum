@@ -1,0 +1,40 @@
+var svgContainer = d3.select("body").append("svg")
+                                     .attr("width", 200)
+                                    .attr("height", 200);
+ 
+ 
+ var circle = svgContainer.append("line")
+                          .attr("x1", 5)
+                          .attr("y1", 5)
+                        .attr("x2", 50)
+                        .attr("y2", 50)
+                        .attr("stroke-width", 2)
+                        .attr("stroke", "black");
+						
+						
+						<svg width="200" height="200">
+							<line x1="5" y1="5" x2="50" y2="50" stroke-width="2" stroke="black"></line>
+						</svg>
+						
+						
+						<svg width="50" height="50">
+							<polyline fill="none" stroke="blue" stroke-width="2"
+								points="05,30
+										 15,30
+										 15,20
+										 25,20
+										 25,10
+										 35,10" />
+						</svg>
+
+						
+var svgContainer = d3.select("body").append("svg")
+                                     .attr("width", 200)
+                                    .attr("height", 200);
+ 
+ 
+ var circle = svgContainer.append("polyline")
+                          
+                        .attr("points","05,30,15,30")
+                         .attr("stroke", "blue")
+                          .attr("stroke-width", 2)  ;   

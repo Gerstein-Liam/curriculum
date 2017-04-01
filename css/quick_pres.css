@@ -1,0 +1,51 @@
+#pdfview{
+	
+	 height: 80vh;
+	 width: 100%;
+}
+
+
+
+
+
+
+
+#it_bachelor_modules_check {
+  transition: all linear 1s;
+    background-color: transparent;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+
+}
+
+#it_bachelor_modules_check.ng-hide {
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  top:-200px;
+  left: 200px;
+}
+
+
+
+#cfc_modules_check {
+  transition: all linear 1s;
+    background-color: transparent;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+
+}
+
+#cfc_modules_check.ng-hide {
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  top:-200px;
+  left: 200px;
+}

@@ -1,0 +1,33 @@
+<!--   
+Angular JS avec d3.js
+
+But: Créer un cercle a chaque click
+
+
+
+-->
+ <!DOCTYPE html>
+<html>
+<head>
+    <script src="lib/d3/d3.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	  <script src="svg_controller.js"></script>
+</head>
+<body>
+	<div ng-app="myApp" >
+		<div ng-controller="SVG_Ctrl">
+			<form>
+				<input type="range" min="0" max="400" ng-model="height.height" />
+				<input type="range" min="0" max="400" ng-model="width.width" />
+				<br/>
+			</form>    
+		</div>
+		<div id="draw_zone" ></div>
+	</div>
+
+	
+</body>
+</html>
+
+
+
