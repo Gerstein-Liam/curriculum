@@ -6,7 +6,7 @@ var app = angular.module('MainApp', [
 
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
-    .when("/", {templateUrl: "partials/quick_presentation.html"})
+    .when("/", {templateUrl: "partials/home.html"})
 	
   
     .when("/cv", {templateUrl: "partials/cv.html"})
