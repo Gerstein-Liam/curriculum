@@ -1,10 +1,15 @@
+
+
+//-------------------------------------------------- Routage-------------------------------------------------------------------------------------------------------------- 
+
+
 'use strict';
-var app = angular.module('MainApp', [
+var mainApp = angular.module('mainApp', [						// Module nGRoute--> Routage des view   |ModulerouteAppControllers-> Permet d'attacher un controlleur a une vue
   'ngRoute',
      'routeAppControllers'
 ]);
 
-app.config(['$routeProvider', function ($routeProvider) {
+mainApp.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     .when("/", {templateUrl: "partials/home.html"})
 	
@@ -15,7 +20,8 @@ app.config(['$routeProvider', function ($routeProvider) {
 		.when("/web/ims_tv", {templateUrl: "partials/web/ims_tv.html"})
 		.when("/web/beemon", {templateUrl: "partials/web/beemon.html"})
 		.when("/web/uspot", {templateUrl: "partials/web/uspot.html"})
-		.when("/web/angular_features_demo1", {templateUrl: "partials/web/angular_features_demo1.html",
+		.when("/web/angular_features_demo1", {
+		 templateUrl: "partials/web/angular_features_demo1.html",
 		 controller: 'TextCtrl'
 
 		})
@@ -39,5 +45,6 @@ app.config(['$routeProvider', function ($routeProvider) {
 
 
 var routeAppControllers = angular.module('routeAppControllers', []);
+
 
 
