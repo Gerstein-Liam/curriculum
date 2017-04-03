@@ -1,45 +1,38 @@
-<!--   
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">Angular features demo 1
+      </h1>
+			<ol class="breadcrumb">
+				<li><a href="#/">Home</a> </li>
+				<li class="active">Angular features demo 1</li>
+			</ol>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-2 col-md-2"> <img class="img-responsive" src="medias/angular-logo.jpg"> </img>
+		</div>
+		<div class="col-lg-10 col-md-10">
+			<div class="row">
+               <div class="col-md-2 col-sm-2 col-xs-2" id="vertical_menu_zone">
+                  <div ng-controller="SVG_Ctrl">
+                     <form>
+                        <p>Signal 1</p>
+                        <input type="number" value="0" min="0" max="1" ng-model="signal_1" size="20" />
+                        <p>Signal 2</p>
+                        <input type="number" value="0" min="0" max="1" ng-model="signal_2" size="20" />
+                        <button ng-click="myFunction()">Latch</button>
+                        <p>{{ count }}</p>
+                        <br/>
+                     </form>
+                  </div>
+               </div>
+               <div class="col-md-10 col-sm-10 col-xs-10" id="workplace">
+                  <div id="draw_zone" ></div>
+               </div>
+            </div>
+		</div>
+	</div>
+</div>
 
-Auteur:Gerstein Liam
-   
-  Petit TP pour melanger d3.js avec angular-js
-      -https://www.dashingd3js.com/table-of-contents  (tuto pour apprendre d3.js)
-	  -http://www.w3schools.com/angular/angular_events.asp (Click->fonction->resultat dans html)
 
-  But: Créer un cercle a chaque click
-  
-  -->
-<!DOCTYPE html>
-<html>
-  <head>
-    <script src="lib/d3/d3.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-  </head>
-  <body>
-    <div ng-app="myApp" ng-controller="myCtrl">
-      <button ng-click="myFunction()">Click Me!</button>
-      <p>{{ count }}</p>
-    </div>
-    <script>
-      var app = angular.module('myApp', []);
-	  
-      app.controller('myCtrl', function($scope) {
-          $scope.count = 0;
-          $scope.myFunction = function() {
-              $scope.count++;
-      		var bodySelection = d3.select("body");
-      
-       var svgSelection = bodySelection.append("svg")
-      	   .attr("width", 50)
-      	   .attr("height", 50);
-       
-       var circleSelection = svgSelection.append("circle")
-      	   .attr("cx", 25)
-      	   .attr("cy", 25)
-      	  .attr("r", 25)
-      	  .style("fill", "purple");
-          }
-      });
-    </script>
-  </body>
-</html>

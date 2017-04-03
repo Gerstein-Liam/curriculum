@@ -20,12 +20,16 @@ mainApp.config(['$routeProvider', function ($routeProvider) {
 		.when("/web/ims_tv", {templateUrl: "partials/web/ims_tv.html"})
 		.when("/web/beemon", {templateUrl: "partials/web/beemon.html"})
 		.when("/web/uspot", {templateUrl: "partials/web/uspot.html"})
-		.when("/web/angular_features_demo1", {
-		 templateUrl: "partials/web/angular_features_demo1.html",
+		.when("/web/angular_littlestory", {
+		 templateUrl: "partials/web/littlestory_view.html",
 		 controller: 'TextCtrl'
 
 		})
-		.when("/web/angular_app1", {templateUrl: "partials/web/angular_app1.html"})
+		.when("/web/ds3_logicalgate", {templateUrl: "partials/web/app1_d3js.html",
+		 controller: 'SVG_Ctrl'
+		
+		
+		})
 		.when("/web/this", {templateUrl: "partials/about.html"})
 	
 
