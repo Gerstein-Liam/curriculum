@@ -1,39 +1,43 @@
 <div class="container">
-	<div class="row">
-		<div class="col-lg-12">
-			<h1 class="page-header">Simulation de portes logiques
-      </h1>
-			<ol class="breadcrumb">
-				<li><a href="#/">Home</a> </li>
-				<li class="active">Simulation de portes logiques</li>
-			</ol>
-		</div>
-	</div>
-	<div class="row">
-		
-		<div class="col-lg-2 col-md-2"> <img class="img-responsive" src="medias/angular-logo.jpg"> </img>
-		</div>
-		<div class="col-lg-10 col-md-10">
-			<div class="row">
-               <div class="col-md-2 col-sm-2 col-xs-2" id="vertical_menu_zone">
-                  <div ng-controller="SVG_Ctrl">
-                     <form>
-                        <p>Signal 1</p>
-                        <input type="number" value="0" min="0" max="1" ng-model="signal_1" size="20" />
-                        <p>Signal 2</p>
-                        <input type="number" value="0" min="0" max="1" ng-model="signal_2" size="20" />
-                        <button ng-click="myFunction()">Latch</button>
-                        <p>{{ count }}</p>
-                        <br/>
-                     </form>
-                  </div>
-               </div>
-               <div class="col-md-9 col-sm-9 col-xs-9" id="workplace">
-                  <div id="draw_zone" ></div>
+   <div class="row">
+      <div class="col-lg-12">
+         <h1 class="page-header">Simulation de portes logiques
+         </h1>
+         <ol class="breadcrumb">
+            <li><a href="#/">Home</a> </li>
+            <li class="active">Simulation de portes logiques</li>
+         </ol>
+      </div>
+   </div>
+   <div class="row">
+      <div class="row">
+         <div class="col-lg-2 col-md-2"> <img class="img-responsive" src="medias/logical_gate/d3js_logo.png"> </img>
+         </div>
+         <div class="col-lg-10 col-md-10">
+            <div class="row">
+               <h3>Objectifs</h3>
+               Prendre en main la librairie D3.JS dans un controller Angular ne créant une petite appli de simulation de porte logique. A l'avenir j'aimerai reprendre le projet de Bachelor
+				" Beemon" afin d'y intégrer les dernières technologie: Angular, D3 ( et me passer de la libraire Google Chart), node.js ( pour remplacer PHP).
+            </div>
+            </br>
+            </br>
+            <div class="col-lg-2 col-md-2" >
+               <div ng-controller="SVG_Ctrl">
+                  <form>
+                     <p>Signal 1</p>
+                     <input type="number" value="0" min="0" max="1" ng-model="signal_1" size="20" />
+                     <p>Signal 2</p>
+                     <input type="number" value="0" min="0" max="1" ng-model="signal_2" size="20" />
+                     <button ng-click="myFunction()">Latch</button>
+                     <p>{{ count }}</p>
+                     <br/>
+                  </form>
                </div>
             </div>
-		</div>
-	</div>
+            <div class="col-lg-9 col-md-9" id="workplace">
+               <div id="draw_zone" ></div>
+            </div>
+         </div>
+      </div>
+   </div>
 </div>
-
-
