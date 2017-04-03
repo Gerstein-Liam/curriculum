@@ -25,7 +25,7 @@ mainApp.config(['$routeProvider', function ($routeProvider) {
 		 controller: 'TextCtrl'
 
 		})
-		.when("/web/ds3_logicalgate", {templateUrl: "partials/web/app1_d3js.html",
+		.when("/web/ds3_logicalgate", {templateUrl: "partials/web/logical_gate_sim.html",
 		 controller: 'SVG_Ctrl'
 		
 		

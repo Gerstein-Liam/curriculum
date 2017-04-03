@@ -1,7 +1,9 @@
-var app = angular.module('myApp', []);
+
 var holder;
 var last_state;
 var time_stamp;
+
+
 mainApp.controller('SVG_Ctrl', function($scope) {
     $scope.count = 0;
     time_stamp = 0;
