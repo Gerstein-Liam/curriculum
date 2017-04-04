@@ -10,16 +10,18 @@
   </br>
  
   <div class="row">
-    <p>Afficher lettre de recommandation
+    <p>Lettre de recommandation
       <input type="checkbox" ng-model="digger_recommandation_check">
     </p>
-    <p>Afficher projets réalisés
+  
+	 <p>Outils et compétences utilisés
+      <input type="checkbox" ng-model="digger_outils">
+    </p>
+	
+	 <p>Réalisations
       <input type="checkbox" ng-model="digger_projets_check">
     </p>
 
-	 <p>Afficher outils et compétences utilisés
-      <input type="checkbox" ng-model="digger_ck">
-    </p>
   </div>
 </div>
 <div class="row">
@@ -29,6 +31,86 @@
     </object>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div ng-show="digger_outils">
+<div class="row">
+  <div class="col-sm-">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading"> <a href="https://www.roboticsforgood.ae/finals/dome-project"><strong>Outil de collaboration et développement</strong></a> </div>
+          <ul class="list-group">
+		  	<li class="list-group-item">GIT</li>
+            <li class="list-group-item">Atlassian [JIRA, BITBUCKET, CONFLUENCE]</li>
+			
+    
+      
+          </ul>
+        </div>
+      </div>
+  </div>
+
+
+
+ <div class="row">
+    
+      <div class="col-sm-4">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading"> <a href="https://www.roboticsforgood.ae/finals/dome-project"><strong>Dévelloppement 3D</strong></a> </div>
+          <ul class="list-group">
+            <li class="list-group-item">Autodesk:Conception mécanique 3D </li>
+			<li class="list-group-item">Processus et outils pour imprimer en 3D</li>
+			<li class="list-group-item"><img class="img-responsive" src="medias/Digger/autodesk.jpg"> </img></li>
+           
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading"> <a href=""><strong>Développement électronique</strong></a> </div>
+          <ul class="list-group">
+            <li class="list-group-item">Altium Designer</li>
+			<li class="list-group-item"><img class="img-responsive" src="medias/Digger/altium.png"> </img></li>
+			</ul>
+        </div>
+      </div>
+        <div class="col-sm-4">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading"> <a href=""><strong>Développement logiciel embarqué</strong></a> </div>
+          <ul class="list-group">
+        
+            <li class="list-group-item">Atmel Studio [langage C sur cible Atmega128]</li>
+			<li class="list-group-item">Synapse portal[langage python sur cible Atmega128]</li>
+			    <li class="list-group-item"><img class="img-responsive" src="medias/Digger/atmel.png"> </img></li>
+			</ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
 <div class="row">
   <div ng-show="digger_projets_check">
     <div class="row">

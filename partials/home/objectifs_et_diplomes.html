@@ -5,28 +5,11 @@
 <div class="row">
   <h3>Diplômes</h3>
 </div>
-<div class="row">
-  <p>Afficher CV
-    <input type="checkbox" ng-model="cv_check">
-  </p>
-  <p>Afficher diplômes et certicats
-    <input type="checkbox" ng-model="dc_check">
-  </p>
-  <div ng-show="cv_check">
-    <object data="medias/cv.pdf" type="application/pdf" id="pdfview">
-      <embed src="medias/cv.pdf" type="application/pdf" />
-    </object>
-  </div>
-  <div ng-show="dc_check">
-    <object data="medias/dc.pdf" type="application/pdf" id="pdfview">
-      <embed src="medias/dc.pdf" type="application/pdf" />
-    </object>
-  </div>
-</div>
+
 <div class="row">
   <div class="col-sm-4">
     <div class="panel panel-default text-center">
-      <div class="panel-heading"> <a href="https://orientation.ch/dyn/show/1900?lang=fr&id=94#"><strong>CFC Electronicien</strong></a> </div>
+      <div class="panel-heading"> <a href="https://orientation.ch/dyn/show/1900?lang=fr&id=94#"><strong>CFC Electronicien [LTSI St-Imier]</strong></a> </div>
       <ul class="list-group">
         <li class="list-group-item">Processus de production</li>
         <li class="list-group-item">Conception de proto et de PCB</li>
@@ -37,7 +20,7 @@
   </div>
   <div class="col-sm-4">
     <div class="panel panel-default text-center">
-      <div class="panel-heading"> <a href="https://orientation.ch/dyn/show/1900?lang=fr&id=94#"><strong>Maturité technique</strong></a> </div>
+      <div class="panel-heading"> <a href="https://orientation.ch/dyn/show/1900?lang=fr&id=94#"><strong>Maturité technique [EPAM Moutier]</strong></a> </div>
       <ul class="list-group">
         <li class="list-group-item">Culture générale</li>
         <li class="list-group-item"><a href="https://www.heia-fr.ch/fr/etudes/bachelor/telecommunications/formation/plans-etudes"><strong>Création d'entreprise: CleverBag</strong></a> </li>
@@ -46,7 +29,7 @@
   </div>
   <div class="col-sm-4">
     <div class="panel panel-default text-center">
-      <div class="panel-heading"> <a href="https://www.heia-fr.ch/fr/etudes/bachelor/telecommunications/formation/plans-etudes"><strong>Bachelor IT</strong></a> </div>
+      <div class="panel-heading"> <a href="https://www.heia-fr.ch/fr/etudes/bachelor/telecommunications/formation/plans-etudes"><strong>Bachelor IT [HES-SO Fribourg]</strong></a> </div>
       <ul class="list-group">
         <li class="list-group-item">Mathématique et physique des signaux</li>
         <li class="list-group-item">Réseaux de télécommunication</li>
@@ -56,5 +39,28 @@
         <li class="list-group-item"><a href="https://www.heia-fr.ch/fr/etudes/bachelor/telecommunications/formation/plans-etudes"><strong>Travail semestre & de Bachelor: BEEMON</strong></a> </li>
       </ul>
     </div>
+  </div>
+</div>
+
+<div class="row">
+
+   <p>Afficher CV
+    <input type="checkbox" ng-model="cv_check">
+  </p>
+
+  <p>Diplômes et certicats
+    <input type="checkbox" ng-model="dc_check">
+  </p>
+  
+  <div ng-show="cv_check">
+    <object data="medias/cv.pdf" type="application/pdf" id="pdfview">
+      <embed src="medias/cv.pdf" type="application/pdf" />
+    </object>
+  </div>
+
+  <div ng-show="dc_check">
+    <object data="medias/dc.pdf" type="application/pdf" id="pdfview">
+      <embed src="medias/dc.pdf" type="application/pdf" />
+    </object>
   </div>
 </div>
