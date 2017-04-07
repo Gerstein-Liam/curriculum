@@ -30,7 +30,7 @@ mainApp.config(['$routeProvider', function ($routeProvider) {
 		
 		
 		})
-		.when("/web/this", {templateUrl: "partials/about.html"})
+		.when("/web/this", {templateUrl: "partials/web/this_site.html"})
 	
 
     .when("/ip/skills", {templateUrl: "partials/ip/skills.html"})
@@ -41,7 +41,7 @@ mainApp.config(['$routeProvider', function ($routeProvider) {
     .when("/electronic/skills", {templateUrl: "partials/electronic/skills.html"})
 		.when("/electronic/power_supply", {templateUrl: "partials/electronic/power_supply.html"})
 		.when("/electronic/remote_car", {templateUrl: "partials/electronic/remote_car.html"})
-	.when("/about", {templateUrl: "partials/about.html"})
+	.when("/ce_site", {templateUrl: "partials/web/this_site.html"})
 	.when("/contact", {templateUrl: "partials/contact.html"})
 
     .otherwise("/404", {templateUrl: "partials/404_page_not_found.html"});
