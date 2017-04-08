@@ -42,6 +42,7 @@ mainApp.config(['$routeProvider', function ($routeProvider) {
 		.when("/electronic/power_supply", {templateUrl: "partials/electronic/power_supply.html"})
 		.when("/electronic/remote_car", {templateUrl: "partials/electronic/remote_car.html"})
 	.when("/ce_site", {templateUrl: "partials/web/this_site.html"})
+	 .when("/hobbys", {templateUrl: "partials/hobbys/hobbys.html"})
 	.when("/contact", {templateUrl: "partials/contact.html"})
 
     .otherwise("/404", {templateUrl: "partials/404_page_not_found.html"});
