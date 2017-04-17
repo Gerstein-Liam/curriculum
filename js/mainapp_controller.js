@@ -17,20 +17,22 @@ mainApp.config(['$routeProvider', function ($routeProvider) {
     .when("/cv", {templateUrl: "partials/cv.html"})
    
     .when("/web/skills", {templateUrl: "partials/web/skills.html"})
-		.when("/web/ims_tv", {templateUrl: "partials/web/ims_tv.html"})
+		.when("/web/this", {templateUrl: "partials/web/this_site.html"})
+	
 		.when("/web/beemon", {templateUrl: "partials/web/beemon.html"})
-		.when("/web/uspot", {templateUrl: "partials/web/uspot.html"})
+
 		.when("/web/angular_littlestory", {
 		 templateUrl: "partials/web/littlestory_view.html",
 		 controller: 'TextCtrl'
 
 		})
+		
 		.when("/web/ds3_logicalgate", {templateUrl: "partials/web/logical_gate_sim.html",
 		 controller: 'SVG_Ctrl'
 		
 		
 		})
-		.when("/web/this", {templateUrl: "partials/web/this_site.html"})
+		
 	
 
     .when("/ip/skills", {templateUrl: "partials/ip/skills.html"})
