@@ -17,7 +17,7 @@ mainApp.controller('SVG_Ctrl', function($scope) {
         var state2 = "" + String(time_stamp) + "," + String(70 + !signal_2 * 50) + "," + String(time_stamp + 30) + "," + String(70 + !signal_2 * 50) + "";
         var stateres = "" + String(time_stamp) + "," + String(140 + !signal_res * 50) + "," + String(time_stamp + 30) + "," + String(140 + !signal_res * 50) + "";
         time_stamp = time_stamp + 30;
-        $scope.count = time_stamp;
+       
         var circle = svgContainer.append("polyline").attr("points", state1).attr("stroke", "blue").attr("stroke-width", 3);
         $scope.count = signal_res;
         var circle = svgContainer.append("polyline").attr("points", state2).attr("stroke", "blue").attr("stroke-width", 3);
