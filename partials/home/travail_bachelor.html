@@ -2,7 +2,10 @@
    <h4><B>2014 travail de Bachelor à l'HES-SO de Fribourg:</B> Système de surveillance à distance de ruche</h4>
 </div>
 <div class="row">
-   <div class="col-lg-3 col-md-3"><img class="img-responsive" src="medias/beemon.jpg"> </img></div>
+
+   <div class="col-lg-3 col-md-3" ng-init="bachelor_logo = 'medias/beemon.JPG'"><img class="img-responsive" ng-src="{{bachelor_logo}}"> </img></div>
+
+ 
    <div class="col-lg-9 col-md-9">
       <div class="row">
          Lors de ma dernière de formation d'ingénieur IT j'ai développé , dans le contexte les projets de semestre et de Bachelor, un système de surveillance de ruche à distance ( BEEMON 1&2&3).Ce projet était motivé par le besoin de comprendre l'effrondrement des colonies d'abeilles dans le monde entier, mais également de fournir un outil d'aide à la production.Il a fallu donc imaginer un système flexible visant à la fois la communité scientifique, et les apiculteurs
@@ -29,6 +32,17 @@
                   <li>François Buntschu:  +41 26 429 65 79  francois.buntschu@hefr.ch</li>
                </ul>
             </div>
+			
+			<div ng-show="Bachelor_realisation">
+               <ul>
+                 
+                  <li> <a href="https://github.com/Gerstein-Liam/beemon ">Code sur GIT-HUB</li>
+               </ul>
+            </div>
+			
+			
+			
+			
          </div>
       </div>
    </div>

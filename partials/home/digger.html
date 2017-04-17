@@ -2,7 +2,13 @@
    <h4><B>2016-Actuellement chez Digger : </B> Ingénieur en systèmes embarqués</h4>
 </div>
 <div class="row">
-   <div class="col-lg-3 col-md-3"><img class="img-responsive" src="medias/Digger/dïgger_dtr.jpg"> </img></div>
+   
+    <div class="col-lg-3 col-md-3" ng-init="myVar = 'medias/digger/digger_dtr.jpg'">
+		<img class="img-responsive" ng-src="{{myVar}}"> </img>
+	</div>
+   
+  
+   
    <div class="col-lg-9 col-md-9">
       <div class="row">
          La <a href="https://www.digger.ch">Fondation Digger</a>  est une organisation à but non lucratif, reconnue d’utilité publique en Suisse. Elle est spécialisée dans les technologies de déminages humanitaire. Elle a fait récemment parler d'elle en participant au concours internal <a href="https://www.roboticsforgood.ae/finals/dome-project"> "Robotics for goods"</a> ,dédié aux technologies humanitaires et qui à été organisée à Dubai, ou elle à présentée le projet "Dome" 

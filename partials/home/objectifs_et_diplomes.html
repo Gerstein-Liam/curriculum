@@ -24,6 +24,42 @@
 </div>
 
 <div class="row">
+
+
+     <ul>
+               <li>
+                  <p>Afficher CV <input type="checkbox" ng-model="cv_check"></p>
+               </li>
+               <li>
+                 <p>Diplômes et certicats <input type="checkbox" ng-model="dc_check"></p>
+               </li>
+              
+            </ul>
+			
+			</br>
+
+
+
+
+
+
+
+  
+  <div ng-show="cv_check">
+    <object data="medias/CV_Gerstein Liam.pdf" type="application/pdf" id="pdfview">
+      <embed src="medias/CV_Gerstein Liam.pdf" type="application/pdf" />
+    </object>
+  </div>
+
+  <div ng-show="dc_check">
+    <object data="medias/dc.pdf" type="application/pdf" id="pdfview">
+      <embed src="medias/dc.pdf" type="application/pdf" />
+    </object>
+  </div>
+</div>
+
+
+<div class="row">
   <div class="col-sm-4">
     <div class="panel panel-default text-center">
       <div class="panel-heading"> <a href="https://orientation.ch/dyn/show/1900?lang=fr&id=94#"><strong>CFC Electronicien [LTSI St-Imier]</strong></a> </div>
@@ -59,35 +95,3 @@
   </div>
 </div>
 
-<div class="row">
-
-
-     <ul>
-               <li>
-                  <p>Afficher CV <input type="checkbox" ng-model="cv_check"></p>
-               </li>
-               <li>
-                 <p>Diplômes et certicats <input type="checkbox" ng-model="dc_check"></p>
-               </li>
-              
-            </ul>
-
-
-
-
-
-
-
-  
-  <div ng-show="cv_check">
-    <object data="medias/CV_Gerstein Liam.pdf" type="application/pdf" id="pdfview">
-      <embed src="medias/CV_Gerstein Liam.pdf" type="application/pdf" />
-    </object>
-  </div>
-
-  <div ng-show="dc_check">
-    <object data="medias/dc.pdf" type="application/pdf" id="pdfview">
-      <embed src="medias/dc.pdf" type="application/pdf" />
-    </object>
-  </div>
-</div>
