@@ -31,7 +31,11 @@
                      <p>Signal 2</p>
                      <input type="number"  min="0" max="1"  ng-model="signal_2" size="20" />
                      <button ng-click="myFunction()">Latch</button>
-                     <p>{{ signal_1 && signal_2 }}</p>
+                     <p>Future state{{ signal_1 && signal_2 }}</p>
+                     <br/>
+					 
+					 
+					 <p>Past state{{ past_state }}</p>
                      <br/>
                   </form>
                </div>
