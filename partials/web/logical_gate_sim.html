@@ -26,16 +26,16 @@
                   <form>
 				  
 				  
-                     <p>Signal 1</p>
+                     <p>Green State</p>
                      <input type="number"  min="0" max="1" ng-model="i_green_state" size="20" />
-                     <p>Signal 2</p>
+                     <p>Blue State</p>
                      <input type="number"  min="0" max="1"  ng-model="i_blue_state" size="20" />
                      <button ng-click="myFunction()">Latch</button>
                      <p>Future state{{ i_green_state && i_blue_state }}</p>
                      <br/>
 					 
 					 
-					 <p>Past state{{ past_state }}</p>
+					 <p>Past state{{ o_res_red_past_state }}</p>
                      <br/>
                   </form>
                </div>
