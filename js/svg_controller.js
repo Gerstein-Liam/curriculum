@@ -9,7 +9,13 @@ mainApp.controller('SVG_Ctrl', function($scope) {
     time_stamp = 0;
     var svgContainer = d3.select("#draw_zone").append("svg").attr("width", 200).attr("height", 400);
 	//var svgContainer = d3.select("#draw_zone").append("svg").attr("width", 800).attr("height", 800);
-    $scope.myFunction = function() {
+    
+	 $scope.signal_1 = 0;
+	 $scope.signal_2 = 0;
+     
+	
+	
+	$scope.myFunction = function() {
         var signal_1 = Boolean($scope.signal_1);
         var signal_2 = Boolean($scope.signal_2);
         var signal_res = signal_1 & signal_2;

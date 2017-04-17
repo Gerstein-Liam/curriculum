@@ -24,10 +24,12 @@
             <div class="col-lg-2 col-md-2" >
                <div ng-controller="SVG_Ctrl">
                   <form>
+				  
+				  
                      <p>Signal 1</p>
-                     <input type="number" value="0" min="0" max="1" ng-model="signal_1" size="20" />
+                     <input type="number"  min="0" max="1" ng-model="signal_1" size="20" />
                      <p>Signal 2</p>
-                     <input type="number" value="0" min="0" max="1" ng-model="signal_2" size="20" />
+                     <input type="number"  min="0" max="1"  ng-model="signal_2" size="20" />
                      <button ng-click="myFunction()">Latch</button>
                      <p>{{ signal_1 && signal_2 }}</p>
                      <br/>
