@@ -21,12 +21,16 @@ mainApp.controller('SVG_Ctrl', function($scope) {
 	var svg_blue_state ;
 	 var svg_res_red_state;
 	
-	 var svgGreenZone = d3.select("#green_zone").append("svg").attr("width", 400).attr("height", 60);$
-	 var svgBlueZone = d3.select("#blue_zone").append("svg").attr("width", 400).attr("height", 60);
-	  var svgRedZone = d3.select("#red_zone").append("svg").attr("width", 400).attr("height", 60);
+	// var svgGreenZone = d3.select("#green_zone").append("svg").attr("width", 400).attr("height", 60);
+	 //var svgBlueZone =  d3.select("#blue_zone").append("svg").attr("width", 400).attr("height", 60);
+	 // var svgRedZone =  d3.select("#red_zone").append("svg").attr("width", 400).attr("height", 60);
 
-    
+     var svgGreenZone = d3.select("#green_zone").append("svg").attr("width", 400).attr("height", 60);
+	 var svgBlueZone =  d3.select("#blue_zone").append("svg").attr("width", 400).attr("height", 60);
+	  var svgRedZone =  d3.select("#red_zone").append("svg").attr("width", 400).attr("height", 60);
+	  
 	
+   $("svgGreenZone ").css({top: 200, left: 200, position:'left'});
      
 	
 	
@@ -81,7 +85,7 @@ mainApp.controller('SVG_Ctrl', function($scope) {
         svgBlueZone.append("polyline").attr("points", svg_blue_state).style("fill", "none").attr("stroke", "blue").attr("stroke-width", 3);
 		svgRedZone.append("polyline").attr("points", svg_res_red_state).style("fill", "none").attr("stroke", "red").attr("stroke-width", 3);
 		
-		
+			
 		past_green_state=current_green_state;
 		past_blue_state=current_blue_state;
 		past_res_red_state=current_res_red_state;

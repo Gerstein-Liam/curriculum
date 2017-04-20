@@ -45,15 +45,13 @@ iframe{
 }
 
 
-.material-switch > input[type="checkbox"] {
-    display: none;   
-}
 
 
 
 
 
-/*
+
+
 .row{
 	border: 1px solid #26B7D4;
 	border-radius: 10px;	
