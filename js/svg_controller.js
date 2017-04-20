@@ -91,8 +91,3 @@ mainApp.controller('SVG_Ctrl', function($scope) {
     }
 });
 
-
-holder.append("polyline")      // attach a polyline
-    .style("stroke", "black")  // colour the line
-    .style("fill", "none")     // remove any fill colour
-    .attr("points", "100,50, 200,150, 300,50");  // x,y points
