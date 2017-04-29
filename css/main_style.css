@@ -48,7 +48,9 @@ iframe{
 
 
 
-
+ #map {
+        height: 100%;
+      }
 
 
 
