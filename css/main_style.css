@@ -52,14 +52,3 @@ iframe{
         height: 100%;
       }
 
-
-
-.row{
-	border: 1px solid #26B7D4;
-	border-radius: 10px;	
-}
-[class*="col-"] {
- border: 1px solid #26B7D4;
-	border-radius: 10px;
-}
-*/
