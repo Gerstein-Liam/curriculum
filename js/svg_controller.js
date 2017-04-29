@@ -19,7 +19,7 @@ mainApp.controller('SVG_Ctrl', function($scope) {
 	
 	var svg_green_state ;
 	var svg_blue_state ;
-	 var svg_res_red_state;
+	var svg_res_red_state;
 	
 	// var svgGreenZone = d3.select("#green_zone").append("svg").attr("width", 400).attr("height", 60);
 	 //var svgBlueZone =  d3.select("#blue_zone").append("svg").attr("width", 400).attr("height", 60);
@@ -27,7 +27,7 @@ mainApp.controller('SVG_Ctrl', function($scope) {
 
      var svgGreenZone = d3.select("#green_zone").append("svg").attr("width", 800).attr("height", 60);
 	 var svgBlueZone =  d3.select("#blue_zone").append("svg").attr("width", 800).attr("height", 60);
-	  var svgRedZone =  d3.select("#red_zone").append("svg").attr("width", 800).attr("height", 60);
+	 var svgRedZone =  d3.select("#red_zone").append("svg").attr("width", 800).attr("height", 60);
 	  
 	
   
