@@ -25,12 +25,12 @@ mainApp.controller('SVG_Ctrl', function($scope) {
 	 //var svgBlueZone =  d3.select("#blue_zone").append("svg").attr("width", 400).attr("height", 60);
 	 // var svgRedZone =  d3.select("#red_zone").append("svg").attr("width", 400).attr("height", 60);
 
-     var svgGreenZone = d3.select("#green_zone").append("svg").attr("width", 400).attr("height", 60);
-	 var svgBlueZone =  d3.select("#blue_zone").append("svg").attr("width", 400).attr("height", 60);
-	  var svgRedZone =  d3.select("#red_zone").append("svg").attr("width", 400).attr("height", 60);
+     var svgGreenZone = d3.select("#green_zone").append("svg").attr("width", 800).attr("height", 60);
+	 var svgBlueZone =  d3.select("#blue_zone").append("svg").attr("width", 800).attr("height", 60);
+	  var svgRedZone =  d3.select("#red_zone").append("svg").attr("width", 800).attr("height", 60);
 	  
 	
-   $("svgGreenZone ").css({top: 200, left: 200, position:'left'});
+  
      
 	
 	
