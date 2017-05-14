@@ -27,7 +27,7 @@ mainApp.config(['$routeProvider', function ($routeProvider) {
 
 		})
 		
-		.when("/web/ds3_logicalgate", {templateUrl: "partials/web/logical_gate_sim.html",
+		.when("/web/smallapps", {templateUrl: "partials/web/smallapps.html",
 		 controller: 'SVG_Ctrl'
 		
 		
