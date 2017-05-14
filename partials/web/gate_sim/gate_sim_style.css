@@ -1,0 +1,51 @@
+
+/*
+#vertical_menu_zone
+{
+	height:90vh;
+	border: 1px solid #26B7D4;
+	border-radius: 10px;
+}
+*/
+/*
+
+#workplace
+{
+	height:90vh;
+	border: 1px solid #26B7D4;
+	border-radius: 10px;
+	width:80%;
+}
+*/
+
+
+#green_zone
+{
+	border: 1px solid #26B7D4;
+	border-radius: 10px;
+
+}
+#blue_zone
+{
+	border: 1px solid #26B7D4;
+	border-radius: 10px;
+
+}
+#red_zone
+{
+	border: 1px solid #26B7D4;
+	border-radius: 10px;
+
+
+}
+
+
+svg{
+
+display: block;
+margin-left: 2px;
+
+
+}
+
+

@@ -1,0 +1,25 @@
+<div class="row">
+   <ul>
+      <li>
+	    <button ng-click="cv_check=true">Show</button> 
+		<button ng-click="cv_check=false">Hide</button> 
+	  
+	  
+        
+      </li>
+      <li>
+         <p>Diplômes et certicats <input type="checkbox" ng-model="dc_check"></p>
+      </li>
+   </ul>
+   </br>
+   <div ng-show="cv_check">
+      <object data="medias/dossier_candidature/CV_Gerstein Liam.pdf" type="application/pdf" id="pdfview">
+         <embed src="medias/dossier_candidature/CV_Gerstein Liam.pdf" type="application/pdf" />
+      </object>
+   </div>
+   <div ng-show="dc_check">
+      <object data="medias/dossier_candidature/dc.pdf" type="application/pdf" id="pdfview">
+         <embed src="medias/dossier_candidature/dc.pdf" type="application/pdf" />
+      </object>
+   </div>
+</div>
