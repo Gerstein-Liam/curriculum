@@ -33,6 +33,13 @@ mainApp.config(['$routeProvider', function ($routeProvider) {
 		
 		})
 		
+		.when("/web/uspot", {templateUrl: "partials/web/uspot/uspot.html",
+		 controller: 'MapController'
+		
+		
+		})
+		
+	
 	
 
     .when("/ip/skills", {templateUrl: "partials/ip/skills.html"})
